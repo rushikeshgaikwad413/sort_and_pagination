@@ -20,13 +20,6 @@ public class ProductService {
 	 @Autowired
 	    private ProductRepository repository;
 
-//	    @PostConstruct
-//	    public void initDB() {
-//	        List<Product> products = IntStream.rangeClosed(1, 200)
-//	                .mapToObj(i -> new Product("product" + i, new Random().nextInt(100), new Random().nextInt(50000)))
-//	                .collect(Collectors.toList());
-//	        repository.saveAll(products);
-//	    }
 	 
 	   public Product createProduct(Product product) {
 		    Product newProduct = new Product(product.getName(), product.getQuantity(), product.getPrice());
